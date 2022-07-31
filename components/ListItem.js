@@ -5,8 +5,7 @@ const ListItem = ({items, deleteHandler}) => {
   return (
     <TouchableOpacity
       style={styles.container}
-      onPress={() => deleteHandler(items.key)}
-      key={items.key}>
+      onPress={() => deleteHandler(items.key)}>
       <Text style={styles.text}>{items.title}</Text>
       <Text style={styles.date}>Добавлено: {items.date}</Text>
     </TouchableOpacity>
